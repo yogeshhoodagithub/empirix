@@ -2,7 +2,10 @@ package empirix_package;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -30,13 +33,15 @@ public class login {
 	public void login_to_empirix() throws InterruptedException {
 	    
 		driver.manage().window().maximize();
-
+		WebDriverWait wait = new WebDriverWait(driver, 120);
 		driver.get("https://services-sso.empirix.com/openam/XUI/#login/&goto=https%3A%2F%2Fservices.empirix.com%3A443%2F");
-		Thread.sleep(30000);
+		//Thread.sleep(30000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='callback_0']")));
 		driver.findElement(By.xpath("//input[@name='callback_0']")).sendKeys("QA_traininguser15");
 		driver.findElement(By.xpath("//input[@name='callback_1']")).sendKeys("Empirix!");
 		driver.findElement(By.xpath("//input[@name='callback_2']")).click();
-		Thread.sleep(60000);
+		//Thread.sleep(60000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Dashboard")));
 		String text = driver.findElement(By.linkText("Dashboard")).getText();	
 		
 		System.out.println(text);
@@ -46,7 +51,9 @@ public class login {
 			driver.findElement(By.xpath("//a[@class='dropdown-toggle ng-binding']")).click();
 			driver.findElement(By.xpath("//a[contains(text(),'Japanese')]")).click();
 			driver.switchTo().alert().accept();
-			Thread.sleep(20000);		
+			Thread.sleep(10000);
+			
+			
 			
 			driver.findElement(By.xpath("//a[@class='dropdown-toggle ng-binding']")).click();
 			driver.findElement(By.xpath("//a[contains(text(),'English')]")).click();
@@ -55,26 +62,70 @@ public class login {
 			
 			if(driver.findElements(By.linkText("Dashboard")).size() != 0){
 				System.out.println("Dashboard is Present");
+				
 				}else{
 				System.out.println("Dashboard is Absent");
 				}
+			
+			
 			if(driver.findElements(By.linkText("Alerts")).size() != 0){
 				System.out.println("Alerts is Present");
-				}else{
+				driver.findElement(By.linkText("Alerts")).click();
+				Thread.sleep(5000);
+				
+				if(driver.findElements(By.xpath("//th[contains(text(),'Alert Status')]")).size() != 0) {
+					System.out.println("Alerts tab was opened successfully");
+					
+				} else {
+					System.out.println("Alerts tab was not opened correctly");
+					
+				}
+				
+			}else{
 				System.out.println("Alerts is Absent");
 				}
+			
+			
+			
 			if(driver.findElements(By.linkText("Tests")).size() != 0){
 				System.out.println("Tests is Present");
-				}else{
+				driver.findElement(By.linkText("Tests")).click();
+				Thread.sleep(5000);
+				
+				if(driver.findElements(By.xpath("//h4[contains(text(),'Test')]")).size() != 0) {
+					System.out.println("Tests tab was opened successfully");
+					
+				} else {
+					System.out.println("Tests tab was not opened correctly");
+					
+				}
+				
+			}else{
 				System.out.println("Tests is Absent");
 				}
 			if(driver.findElements(By.linkText("Variables")).size() != 0){
 				System.out.println("Variables is Present");
-				}else{
+				driver.findElement(By.linkText("Variables")).click();
+				Thread.sleep(5000);
+				if(driver.findElements(By.xpath("//div[@class='ng-scope']//h4[contains(text(),'Variable')]")).size() != 0) {
+					System.out.println("Variables tab was opened successfully");
+					
+				} else {
+					System.out.println("Variables tab was not opened correctly");
+				}
+			}else{
 				System.out.println("Variables is Absent");
 				}
 			if(driver.findElements(By.linkText("Notifications")).size() != 0){
 				System.out.println("Notifications is Present");
+				driver.findElement(By.linkText("Notifications")).click();
+				Thread.sleep(5000);
+				if(driver.findElements(By.xpath("//h4[contains(text(),'Notification')]")).size() != 0) {
+					System.out.println("Notification tab was opened successfully");
+					
+				} else {
+					System.out.println("Notification tab was not opened correctly");
+				}
 				}else{
 				System.out.println("Notifications is Absent");
 				}
@@ -183,7 +234,7 @@ public class login {
 				System.out.println("Client Details is Absent");
 				}
 
-		
+
 
 	}
 
