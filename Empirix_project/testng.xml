@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5" thread-count="2" parallel="tests">
+  <test name="login_to_empirix">
+  <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="empirix_package.login"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="login_to_empirix_dup">
+  <parameter name="browser" value="Chrome" />
+    <classes>
+      <class name="empirix_package.login"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

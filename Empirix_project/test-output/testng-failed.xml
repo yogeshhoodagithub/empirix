@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="5" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="Chrome"/>
+  <test name="login_to_empirix(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="empirix_package.login">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="login_to_empirix_dup"/>
+          <include name="close_browser_empirix"/>
+          <include name="close_browser_empirix"/>
+        </methods>
+      </class> <!-- empirix_package.login -->
+    </classes>
+  </test> <!-- login_to_empirix(failed) -->
+  <test name="login_to_empirix_dup(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="empirix_package.login">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="login_to_empirix_dup"/>
+          <include name="close_browser_empirix"/>
+          <include name="close_browser_empirix"/>
+        </methods>
+      </class> <!-- empirix_package.login -->
+    </classes>
+  </test> <!-- login_to_empirix_dup(failed) -->
+</suite> <!-- Failed suite [Suite] -->
