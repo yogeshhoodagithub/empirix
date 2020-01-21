@@ -1,0 +1,263 @@
+Started by user [8mha:////4C0bE0ZacvOilIrBC2W7Z+NCywwipLqsRkjRQep+y7U6AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZu/dLi1CL9xJTczDwA9svhPMAAAAA=[0mYogesh
+Running as SYSTEM
+Building on master in workspace C:\Program Files (x86)\Jenkins\workspace\EmpirixProject
+[EmpirixProject] $ cmd /c call C:\WINDOWS\TEMP\jenkins8422878745427217869.bat
+
+C:\Program Files (x86)\Jenkins\workspace\EmpirixProject>cd C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project 
+
+C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project>java -cp "C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\bin;C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\lib\*" org.testng.TestNG testng.xml 
+...
+... TestNG 6.8beta 20120825_1010 by C?dric Beust (cedric@beust.com)
+...
+
+[TestRunner] Running the tests in 'login_to_empirix' with parallel mode:tests
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@27a5f880 priority: 10
+[TestClass] Creating TestClass for [ClassImpl class=empirix_package.login]
+[TestClass] Adding method login.login_to_empirix_dup()[pri:0, instance:null] on TestClass class empirix_package.login
+[TestClass] Adding method login.login_to_empirix()[pri:0, instance:null] on TestClass class empirix_package.login
+[XmlMethodSelector] Including method empirix_package.launchBrowser()
+[XmlMethodSelector] Including method empirix_package.close_browser_empirix()
+[XmlMethodSelector] Including method empirix_package.login_to_empirix_dup()
+[XmlMethodSelector] Including method empirix_package.login_to_empirix()
+[TestRunner] Running the tests in 'login_to_empirix_dup' with parallel mode:tests
+[RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@77f99a05 priority: 10
+[TestClass] Creating TestClass for [ClassImpl class=empirix_package.login]
+[TestClass] Adding method login.login_to_empirix_dup()[pri:0, instance:null] on TestClass class empirix_package.login
+[TestClass] Adding method login.login_to_empirix()[pri:0, instance:null] on TestClass class empirix_package.login
+[XmlMethodSelector] Including method empirix_package.launchBrowser()
+[XmlMethodSelector] Including method empirix_package.close_browser_empirix()
+[XmlMethodSelector] Including method empirix_package.login_to_empirix_dup()
+[XmlMethodSelector] Including method empirix_package.login_to_empirix()
+[TestNG] Running:
+  C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\testng.xml
+
+[SuiteRunner] Created 2 TestRunners
+[ThreadUtil] Starting executor timeOut:2147483647ms workers:2 threadPoolSize:2
+[[SuiteWorker]] Running XML Test 'login_to_empirix' in Parallel
+[TestRunner] Running test login_to_empirix on 1  classes,  included groups:[] excluded groups:[]
+===== Test class
+empirix_package.login
+    @Test login.login_to_empirix_dup()[pri:0, instance:empirix_package.login@587d1d39]
+    @Test login.login_to_empirix()[pri:0, instance:empirix_package.login@587d1d39]
+======
+[[SuiteWorker]] Running XML Test 'login_to_empirix_dup' in Parallel
+[TestRunner] Running test login_to_empirix_dup on 1  classes,  included groups:[] excluded groups:[]
+===== Test class
+empirix_package.login
+    @Test login.login_to_empirix_dup()[pri:0, instance:empirix_package.login@63440df3]
+    @Test login.login_to_empirix()[pri:0, instance:empirix_package.login@63440df3]
+======
+[Invoker 1101074288] Invoking @BeforeTest login.launchBrowser()[pri:0, instance:empirix_package.login@63440df3]
+[Invoker 482713083] Invoking @BeforeTest login.launchBrowser()[pri:0, instance:empirix_package.login@587d1d39]
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 5085
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 22059
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1579637396.133][WARNING]: Timed out connecting to Chrome, retrying...
+[1579637396.135][WARNING]: Timed out connecting to Chrome, retrying...
+Jan 22, 2020 1:40:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Invoker 482713083] Invoking empirix_package.login.login_to_empirix
+Jan 22, 2020 1:40:03 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Invoker 1101074288] Invoking empirix_package.login.login_to_empirix
+[1579637405.115][WARNING]: Timed out connecting to Chrome, retrying...
+[1579637405.136][WARNING]: Timed out connecting to Chrome, retrying...
+Dashboard
+Dashboard
+Dashboard is Present
+Alerts is Present
+Tests is Present
+Variables is Present
+Notifications is Present
+Dashboard is Present
+Alerts is Present
+Tests is Present
+Variables is Present
+Notifications is Present
+Client Name is Present
+Description is Present
+Client Details is Present
+[Invoker 482713083] Invoking empirix_package.login.login_to_empirix_dup
+Test A
+Client Name is Present
+Description is Present
+Client Details is Present
+[Invoker 1101074288] Invoking empirix_package.login.login_to_empirix_dup
+Test A
+[Invoker 482713083] Invoking @AfterTest login.close_browser_empirix()[pri:0, instance:empirix_package.login@587d1d39]
+Test B
+===== Invoked methods
+    login.login_to_empirix()[pri:0, instance:empirix_package.login@587d1d39] 1484594489
+    login.login_to_empirix_dup()[pri:0, instance:empirix_package.login@587d1d39] 1484594489
+=====
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\Suite\login_to_empirix.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\Suite\login_to_empirix.xml
+PASSED: login_to_empirix
+FAILED: login_to_empirix_dup
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='callback_0']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'GURMUNI121033', ip: '192.168.43.230', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:52499}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 54ccd4f0d44c1a50d13a5422fb57707e
+*** Element info: {Using=xpath, value=//input[@name='callback_0']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at empirix_package.login.login_to_empirix_dup(login.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+===============================================
+    login_to_empirix
+    Tests run: 2, Failures: 1, Skips: 0
+===============================================
+
+[Invoker 1101074288] Invoking @AfterTest login.close_browser_empirix()[pri:0, instance:empirix_package.login@63440df3]
+Test B
+===== Invoked methods
+    login.login_to_empirix()[pri:0, instance:empirix_package.login@63440df3] 1665404403
+    login.login_to_empirix_dup()[pri:0, instance:empirix_package.login@63440df3] 1665404403
+=====
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\Suite\login_to_empirix_dup.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\Suite\login_to_empirix_dup.xml
+PASSED: login_to_empirix
+FAILED: login_to_empirix_dup
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='callback_0']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'GURMUNI121033', ip: '192.168.43.230', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:52498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 88d6060391764d1aa8122909411ba4fc
+*** Element info: {Using=xpath, value=//input[@name='callback_0']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at empirix_package.login.login_to_empirix_dup(login.java:116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+===============================================
+    login_to_empirix_dup
+    Tests run: 2, Failures: 1, Skips: 0
+===============================================
+
+
+===============================================
+Suite
+Total tests run: 4, Failures: 2, Skips: 0
+===============================================
+
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\index.html
+[TestNG] Time taken by org.testng.reporters.jq.Main@4e9ba398: 86 ms
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\testng-failed.xml
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\Suite\testng-failed.xml
+[TestNG] Time taken by [FailedReporter passed=0 failed=0 skipped=0]: 24 ms
+[TestNG] Time taken by org.testng.reporters.EmailableReporter@210366b4: 18 ms
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\testng-results.xml
+[TestNG] Time taken by org.testng.reporters.XMLReporter@6f1fba17: 38 ms
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\junitreports\TEST-empirix_package.login.xml
+[TestNG] Time taken by org.testng.reporters.JUnitReportReporter@57536d79: 9 ms
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\toc.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\login_to_empirix.properties
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\login_to_empirix_dup.properties
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\index.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\main.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\groups.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-alphabetical.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\classes.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\reporter-output.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\methods-not-run.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\Suite\testng.xml.html
+Creating C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project\test-output\old\index.html
+[TestNG] Time taken by org.testng.reporters.SuiteHTMLReporter@56235b8e: 116 ms
+
+C:\Users\gur15277\eclipse-workspace\Altran\Empirix_project>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE
