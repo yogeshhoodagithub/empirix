@@ -4,8 +4,13 @@ README text file
 
 Steps required to be followed on Jenkins:
 
-Pre-requisites: You must have jenkins installed on your system to execute Empirix project from Jenkins
+Pre-requisites: 
+
+1. You must have jenkins installed on your system to execute Empirix project from Jenkins
+2. Update web driver location in the Java class as per your system location for the same.
  
+Following are the STEPs::
+
 Step 1:  Get the Jenkins jobs available on GitHub repository [GitHub Path = https://github.com/yogeshhoodagithub/empirix/tree/master/Empirix_project and Folder name = "EmpirixProject_jenkinsJob"]
 Step 2:  Put Jenkins job folder along with your other Jenkins jobs.
 Step 3:  Go to your jenkins web page and you will find this job available for you.
